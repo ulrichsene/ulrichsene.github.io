@@ -4,57 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Eva's Projects!</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header {
-      text-align: center;
-      padding: 2rem;
-      background: linear-gradient(to right, lch(43.21% 118.67 312.3), hsl(309, 77%, 56%));
-      color: white;
-    }
-    h1 {
-      margin: 0;
-    }
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-      padding: 2rem;
-      max-width: 1200px;
-      margin: auto;
-    }
-    .card {
-      background-color: #eca0e8;
-      padding: 1rem;
-      border-radius: 24px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-      transition: transform 0.2s ease;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    .card h2 {
-      margin-top: 0;
-      font-size: 1.2rem;
-    }
-    .card a {
-      text-decoration: none;
-      color: hwb(245 7% 15%);
-    }
-    @media (max-width: 600px) {
-      header {
-        padding: 1.5rem 1rem;
-      }
-      .projects {
-        padding: 1rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style/index.css" />
 </head>
 <body>
   <header>
@@ -62,27 +12,27 @@
     <p>Some of the work I’ve done in 2024 and 2025.</p>
   </header>
   <main class="projects">
-    <div class="card" onclick="location.href='weather.html';" style="cursor: pointer;">
+    <div class="card" onclick="location.href='html/weather.html';" style="cursor: pointer;">
       <h2>Weather Station</h2>
       <p>Web server dashboard with sensor data using WiFi, MQTT and InfluxDB.</p>
       <a href="https://github.com/ulrichsene/Cornerstone" target="_blank">View on GitHub →</a>
     </div>
-    <div class="card">
+    <div class="card" onclick="location.href='html/movies.html';" style="cursor: pointer;">
       <h2>Free2MeMovies</h2>
       <p>Movie recommendation algorithm and website that uses streaming services to give movie recommendations.</p>
       <a href="https://github.com/ulrichsene/UltimateMovieRecommendation" target="_blank">View on GitHub →</a>
     </div>
-    <div class="card">
+    <div class="card" onclick="location.href='html/titanic.html';" style="cursor: pointer;">
       <h2>Titanic Classification Research Project</h2>
       <p>Using a Titanic dataset to explore methods of feature selection.</p>
       <a href="https://github.com/ulrichsene/titanicClassification" target="_blank">View on GitHub →</a>
     </div>
-    <div class="card">
+    <div class="card" onclick="location.href='html/chatbot.html';" style="cursor: pointer;">
       <h2>Chatbot</h2>
       <p>Terminal based chatbot using GPT 4.0 mini.</p>
       <a href="https://github.com/ulrichsene/chatbotGPT4.0" target="_blank">View on GitHub →</a>
     </div>
-    <div class="card">
+    <div class="card" onclick="location.href='html/tetris.html';" style="cursor: pointer;">
       <h2>In progress ... Tetris</h2>
       <p>LED matrix-based Tetris game built with Python.</p>
       <a href="https://github.com/ulrichsene/Tetris" target="_blank">View on GitHub →</a>

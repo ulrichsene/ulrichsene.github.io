@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  header {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(to right, lch(43.21% 118.67 312.3), hsl(309, 77%, 56%));
+    color: white;
+  }
+  h1 {
+    margin: 0;
+  }
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .card {
+    background-color: #eca0e8;
+    padding: 1rem;
+    border-radius: 24px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  .card h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+  .card a {
+    text-decoration: none;
+    color: hwb(245 7% 15%);
+  }
+  @media (max-width: 600px) {
+    header {
+      padding: 1.5rem 1rem;
+    }
+    .projects {
+      padding: 1rem;
+    }
+  }
