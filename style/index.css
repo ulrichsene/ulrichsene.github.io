@@ -50,29 +50,21 @@ body {
 
   /* for holding images on different html pages */
   .special_card {
-    background-color: #fefefe; /* off-white */
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-    padding: 1.5rem;
-    margin: 2rem auto;
-    max-width: 900px;
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
     align-items: center;
-    transition: transform 0.2s ease;
-  }
+  }  
   
   .special_card:hover {
     transform: translateY(-4px);
   }
   
   .special_card img {
-    width: 100%;
     max-width: 250px;
-    border-radius: 10px;
-    object-fit: cover;
-  }
+    width: 100%;
+    height: auto;
+  }  
   
   .special_card .text {
     flex: 1;
@@ -82,10 +74,6 @@ body {
     .special_card {
       flex-direction: column;
       text-align: center;
-    }
-  
-    .special_card img {
-      max-width: 100%;
-    }
+    } 
   }
   
