@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Projects!</title>
+  <title>Eva's Projects!</title>
   <style>
     body {
       margin: 0;
@@ -29,9 +29,9 @@
       margin: auto;
     }
     .card {
-      background-color: white;
+      background-color: #eca0e8;
       padding: 1rem;
-      border-radius: 12px;
+      border-radius: 24px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.05);
       transition: transform 0.2s ease;
     }
@@ -44,7 +44,7 @@
     }
     .card a {
       text-decoration: none;
-      color: #3b82f6;
+      color: hsl(334, 70%, 64%);
     }
     @media (max-width: 600px) {
       header {
@@ -62,7 +62,7 @@
     <p>Some of the work I’ve done in 2024 and 2025.</p>
   </header>
   <main class="projects">
-    <div class="card">
+    <div class="card" onclick="location.href='weather.html';" style="cursor: pointer;">
       <h2>Weather Station</h2>
       <p>Web server dashboard with sensor data using WiFi, MQTT and InfluxDB.</p>
       <a href="https://github.com/ulrichsene/Cornerstone" target="_blank">View on GitHub →</a>
