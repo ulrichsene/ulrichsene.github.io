@@ -57,7 +57,7 @@ body {
     flex-direction: row;
     gap: 1.5rem;
     align-items: stretch; /* ensures height matches image */
-    max-width: 900px;
+    max-width: 1200px;
     margin: 2rem auto;
     overflow: hidden;
   }
